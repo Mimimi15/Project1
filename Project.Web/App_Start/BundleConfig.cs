@@ -23,9 +23,29 @@ namespace Project.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+          
+            bundles.Add(new StyleBundle("~/Content/css1").Include(
+                     "~/Content/bootstrap.css",
+                     "~/Content/site.css"
+                     ));
+            bundles.Add(new StyleBundle("~/Content/css2").Include(
+            "~/Content/css/font-awesome.min.css",
+                      "~/Content/css/skel.css",
+                      "~/Content/css/style-large.css",
+                      "~/Content/css/style-medium.css",
+                      "~/Content/css/style-small.css",
+                      "~/Content/css/style-xlarge.css",
+                      "~/Content/css/style-xsmall.css",
+                      "~/Content/css/style.css"));
+            //bundles.Add(new StyleBundle("~/bundles/js").Include(
+            //    "~/Scripts/js/html5shiv.js","~/Scripts/js/init.js",
+            //"~/Scripts/js/jquery.min.js",
+            //"~/Scripts/js/skel-layers.min.js", "~/Scripts/js/skel.min.js"));
+
+            bundles.Add(new StyleBundle("~/bundles/js").IncludeDirectory(
+                "~/Scripts/js/", "*.js", true));
+
+            BundleTable.EnableOptimizations = true;
         }
     }
 }

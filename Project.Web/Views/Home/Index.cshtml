@@ -2,7 +2,290 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Beaty Salon</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="" />
+
+    <meta name="keywords" content="" />
+    @Styles.Render("~/Content/css2")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    @*<script src="~/Views/js/jquery.min.js"></script>
+
+        <script src="~/Views/js/skel.min.js"></script>
+
+        <script src="~/Views/js/skel-layers.min.js"></script>
+
+        <script src="~/Views/js/init.js"></script>*@
+
+    @*<noscript>
+
+            <link rel="stylesheet" href="~/Views/css/skel.css" />
+
+            <link rel="stylesheet" href="~/Views/css/style.css" />
+
+            <link rel="stylesheet" href="~/Views/css/style-xlarge.css" />
+
+        </noscript>*@
+
+</head>
+
+<body class="landing">
+    @*@RenderBody()*@
+    @Scripts.Render("~/bundles/js")
+    @*@RenderSection("scripts", required: false)*@
+    <!-- Header -->
+
+    <header id="header" class="alt">
+        <br /><br /><br />
+
+        <h1><strong><a href="index.html">HAIRDRESSER'S</a></strong> in Lviv</h1>
+
+        <nav id="nav">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="elements.html">Elements</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Banner -->
+
+    <section id="banner">
+
+
+        <h2>HAIRDRESSER'S</h2>
+
+        <p>lVIV'S #1 HAIR SALON <br />The lowest prices </p>
+
+        <ul class="actions"></ul>
+
+    </section>
+
+    <!-- One -->
+
+    <div class="6u$ 12u$(medium)">
+    </div>
+    </div>
+
+    </section>
+
+    <!-- Two -->
+
+    <section id="two" class="wrapper style2 special">
+
+        <div class="container">
+            <header class="major">
+
+                <h2>Наші послуги</h2>
+
+                <p></p>
+
+            </header>
+
+            <div class="row 150%">
+
+                <div class="6u 12u$(xsmall)">
+
+                    <div class="image fit captioned">
+
+                        <img src="~/Content/images/pic022.jpg" alt="" />
+
+                        <h3>Жіноча зачіска <br> 150₴</h3>
+
+                    </div>
+                </div>
+                <div class="6u$ 12u$(xsmall)">
+
+                    <div class="image fit captioned">
+
+                        <img src="~/Content/images/pic033.jpg" alt="" />
+
+                        <h3>Стрижка бороди <br> 50₴</h3>
+                    </div>
+                </div>
+                <div class="6u$ 12u$(xsmall)">
+
+                    <div class="image fit captioned">
+
+                        <img src="~/Content/images/pic044.jpg" alt="" />
+
+                        <h3>Чоловіча стрижка <br> 75₴</h3>
+                    </div>
+                </div>
+                <div class="6u$ 12u$(xsmall)">
+
+                    <div class="image fit captioned">
+
+                        <img src="~/Content/images/pic055.jpg" alt="" />
+
+                        <h3>Макіяж <br> 100₴</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Three -->
+
+    <section id="three" class="wrapper style1">
+
+        <div class="container">
+
+            <header class="major special">
+
+                <h2>Наші майстри</h2>
+
+                <p>Професіонали свої справи</p>
+
+            </header>
+
+            <div class="feature-grid">
+
+                <div class="feature">
+
+                    <div class="image rounded"><img src="~/Content/images/pic0111.jpg" alt="" /></div>
+
+                    <div class="content">
+
+                        <header>
+
+                            <h4>Тарас</h4>
+
+                            <p>Мегакрутий майстер</p>
+
+                        </header>
+
+                        <p>Шанований барбер у третьому поколінні</p>
+
+                    </div>
+                </div>
+
+                <div class="feature">
+
+                    <div class="image rounded"><img src="~/Content/images/pic012.jpg" alt="" /></div>
+
+                    <div class="content">
+
+                        <header>
+
+                            <h4>Владислав</h4>
+
+                            <p>Старший барбер</p>
+
+                        </header>
+
+
+                        <p>Єдиний барбер, що обслуговував Чака Норріса і вижив</p>
+
+                    </div>
+
+                </div>
+                <div class="feature">
+
+                    <div class="image rounded"><img src="~/Content/images/pic061.jpg" alt="" /></div>
+
+                    <div class="content">
+
+                        <header>
+
+                            <h4>Наталя</h4>
+
+                            <p>Креативний майстер</p>
+
+                        </header>
+
+                        <p>Незмінний стиліст Lviv Fashion Week</p>
+
+                    </div>
+
+                </div>
+
+                <div class="feature">
+
+                    <div class="image rounded"><img src="~/Content/images/pic071.jpg" alt="" /></div>
+
+                    <div class="content">
+
+                        <header>
+
+                            <h4>Світлана</h4>
+
+                            <p>Досвідчений перукар</p>
+                        </header>
+
+                        <p>Фея краси з понад десятирічним стажем</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Four -->
+
+    <section id="four" class="wrapper style3 special">
+
+        <div class="container">
+
+            <header class="major">
+
+                <h2>Онлайн запис</h2>
+
+                <p>У нас ви маєте можливість записатись у зручний для вас час!</p>
+
+            </header>
+
+            <ul class="actions">
+
+                <li><a href="#" class="button special big">Записатись</a></li>
+
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <header class="major">
+            <p>Наша адреса:  м.Львів, Університетська, 1| +38(095)-00-00-111 | beatysalon@gmail.com	<p>
+
+        </header>
+
+        <div class="container">
+
+            <ul class="icons">
+
+                <li><a href="#" class="icon fa-facebook"></a></li>
+
+                <li><a href="#" class="icon fa-twitter"></a></li>
+
+                <li><a href="#" class="icon fa-instagram"></a></li>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
+@*<div class="jumbotron">
     <h1>ASP.NET</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
     <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
@@ -47,4 +330,4 @@
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
-</div>
+</div>*@
