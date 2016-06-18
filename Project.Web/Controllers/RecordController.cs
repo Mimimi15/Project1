@@ -1,6 +1,8 @@
 ﻿using System.Web.Http;
+using Microsoft.AspNet.Identity;
 using Project.Logic.Models;
 using Project.Logic.Services;
+using Project.Web.Models;
 
 namespace Project.Web.Controllers
 {
@@ -17,6 +19,11 @@ namespace Project.Web.Controllers
         public TimeTable Get()
         {
             return service.GetTimeTable();
+        }
+        [Authorize]
+        public void Post(ScheduleRequest request)
+        {
+            service.Schedule(User.Identity.GetUserId(), request.MasterId, request.Time, request.Duration);
         }
     }
 }
