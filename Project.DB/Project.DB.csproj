@@ -59,6 +59,11 @@
     <Compile Include="Configurations\ContextProvider.cs" />
     <Compile Include="Configurations\IContextProvider.cs" />
     <Compile Include="Configurations\IProjectDbContext.cs" />
+    <Compile Include="Migrations\201606191734186_shkatula_lalka_jibana.cs" />
+    <Compile Include="Migrations\201606191734186_shkatula_lalka_jibana.Designer.cs">
+      <DependentUpon>201606191734186_shkatula_lalka_jibana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AspNetRole.cs" />
     <Compile Include="Models\AspNetUser.cs" />
     <Compile Include="Models\AspNetUserClaim.cs" />
@@ -76,6 +81,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201606191734186_shkatula_lalka_jibana.resx">
+      <DependentUpon>201606191734186_shkatula_lalka_jibana.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

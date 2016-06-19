@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Table";
+}
+
+<h2>Table</h2>
+<table>
+    @foreach (var item in someModelListForMasters)
+    {
+        <tr>
+            <td>@item.Name</td>
+            @foreach (var hour in hoursList)
+            {
+                <td><input type=checkbox @(someCondition ? "checked" : "") </td>
+            }
+        </tr>
+    }
+</table>

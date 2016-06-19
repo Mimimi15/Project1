@@ -12,5 +12,6 @@ namespace Project.DB.Models
         public float Duration { get; set; }
         public virtual AspNetUser Client { get; set; }
         public virtual AspNetUser Master { get; set; }
+        public bool Approved { get; set; }
     }
 }
