@@ -26,7 +26,7 @@ namespace Project.Web.Controllers
 
             return View();
         }
-        
+        [Authorize]
         public ActionResult Record()
         {
             return View()
